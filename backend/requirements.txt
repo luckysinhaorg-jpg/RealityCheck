@@ -1,0 +1,32 @@
+# Core web framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+python-multipart>=0.0.18
+
+# Database
+sqlmodel>=0.0.22
+sqlalchemy>=2.0.0,<3.0.0
+
+# Validation — let pip satisfy mcp's pydantic>=2.12 constraint
+pydantic>=2.12.0
+pydantic-settings>=2.7.0
+
+# MCP — official SDK (includes mcp.server.fastmcp)
+mcp[cli]==2.3.0
+
+# Auth / security
+python-jose[cryptography]>=3.3.0
+python-dotenv>=1.0.0
+
+# Date / time
+python-dateutil>=2.9.0
+tzdata>=2024.1   # Required on Windows for zoneinfo; no-op on Linux/macOS
+
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.26.0
+httpx>=0.27.0
+
+# Typing
+typing-extensions>=4.10.0
